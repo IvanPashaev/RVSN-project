@@ -195,3 +195,23 @@ int l_SetBackgroundMusic(lua_State *L) {
                        0, bgm_buffer, decoded, volume, volume);
   return 0;
 }
+
+int l_StopBackgroundMusic(lua_State *L) {
+  SND_StopVoice(1);
+  return 0;
+}
+
+int l_PauseBackgroundMusic(lua_State *L) {
+  SND_PauseVoice(1, 1);
+  return 0;
+}
+
+int l_UnpauseBackgroundMusic(lua_State *L) {
+  SND_PauseVoice(1, 0);
+  return 0;
+}
+
+int l_StopSound(lua_State *L) {
+  int voice = luaL_checkint(L, 1);
+  SND_StopVoice(voice);
+}

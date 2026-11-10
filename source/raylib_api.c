@@ -285,6 +285,11 @@ static const luaL_Reg rvsn_funcs[] = {
     // AUDIO
     {"PlayAudioFile", l_PlayAudioFile},
     {"SetBackgroundMusic", l_SetBackgroundMusic},
+    {"StopSound", l_StopSound},
+    {"StopBackgroundMusic", l_StopBackgroundMusic},
+    {"PauseBackgroundMusic", l_PauseBackgroundMusic},
+    {"UnpauseBackgroundMusic", l_UnpauseBackgroundMusic},
+
     {NULL, NULL}};
 
 int luaopen_rvsn(lua_State *L) {

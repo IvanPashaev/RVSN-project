@@ -15,3 +15,7 @@ void InitAudioSystem(void);
 
 int l_PlayAudioFile(lua_State *L);
 int l_SetBackgroundMusic(lua_State *L);
+int l_StopBackgroundMusic(lua_State *L);
+int l_PauseBackgroundMusic(lua_State *L);
+int l_UnpauseBackgroundMusic(lua_State *L);
+int l_StopSound(lua_State *L);

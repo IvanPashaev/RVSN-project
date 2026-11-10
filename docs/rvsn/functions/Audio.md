@@ -18,6 +18,18 @@ just playing audiofile (mp3 or ogg) on free voice slot
 | `filepath` | string | Yes | audio file |
 | `volume` | int | No | volume (0-255), standart is 255 |
 
+## rvsn.StopSound
+
+stop playing audio in slot
+
+**Syntax**
+`rvsn.StopSound(2)`
+
+**Parameters**
+| Param | Type | Required | Desc |
+| :--- | :--- | :--- | :--- |
+| `voice` | int | Yes | voice id |
+
 ## rvsn.SetBackgroundMusic
 
 infinite playing audiofile on first voice slot
@@ -30,3 +42,24 @@ infinite playing audiofile on first voice slot
 | :--- | :--- | :--- | :--- |
 | `filepath` | string | Yes | audio file |
 | `volume` | int | No | volume (0-255), standart is 255 |
+
+## rvsn.StopBackgroundMusic
+
+stop playing background music(slot 1)
+
+**Syntax**
+`rvsn.StopBackgroundMusic()`
+
+## rvsn.PauseBackgroundMusic
+
+pause background music(slot 1)
+
+**Syntax**
+`rvsn.PauseBackgroundMusic()`
+
+## rvsn.UnpauseBackgroundMusic
+
+unpause background music(slot 1)
+
+**Syntax**
+`rvsn.UnpauseBackgroundMusic()`
